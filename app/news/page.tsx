@@ -1,5 +1,7 @@
 import { Arrow, PageHero } from "../site-shell";
 
+const linkedInActivity = "https://www.linkedin.com/in/dmc2023/recent-activity/all/";
+
 const news = [
   {date:"September 2026", category:"Research group", title:"RES² launches new waste-to-energy and self-sustained data-center projects", text:"Current researchers Saif Sweidan and Joseph Olascoaga are advancing systems-level work in municipal-solid-waste conversion and resilient data-center energy systems."},
   {date:"August 2026", category:"Teaching recognition", title:"Banpu Professorship recognizes excellence in engineering education", text:"Dr. Dana Marmolejo received the 2026 Banpu Professorship for Teaching Excellence, recognizing sustained contributions to rigorous, engaging, and student-centered engineering learning."},
@@ -15,7 +17,7 @@ const news = [
 export default function NewsPage() {
   return <main>
     <PageHero eyebrow="News" title="Updates from RES² research, education, and student work." intro="Recognition, presentations, workshops, collaborations, and milestones from the group and its broader professional community." />
-    <section className="section shell"><div className="news-list">{news.map((item,index) => <article className={index === 0 ? "news-item featured" : "news-item"} key={item.title}><div><span>{item.date}</span><small>{item.category}</small></div><div><h2>{item.title}</h2><p>{item.text}</p>{item.links ? <div className="news-links">{item.links.map((link) => <a className="text-link profile-link" href={link.href} key={link.href}>{link.label} <Arrow /></a>)}</div> : item.href ? <a className="text-link profile-link" href={item.href}>Read more <Arrow /></a> : null}</div></article>)}</div></section>
+    <section className="section shell"><div className="news-list">{news.map((item,index) => <article className={index === 0 ? "news-item featured" : "news-item"} key={item.title}><div><span>{item.date}</span><small>{item.category}</small></div><div><h2>{item.title}</h2><p>{item.text}</p><div className="news-links">{item.links ? item.links.map((link) => <a className="text-link profile-link" href={link.href} target="_blank" rel="noreferrer" key={link.href}>{link.label} <Arrow /></a>) : item.href ? <a className="text-link profile-link" href={item.href} target="_blank" rel="noreferrer">Read more <Arrow /></a> : null}<a className="text-link profile-link" href={linkedInActivity} target="_blank" rel="noreferrer">LinkedIn post <Arrow /></a></div></div></article>)}</div></section>
     <section className="news-submit"><div className="shell news-submit-grid"><h2>Have a RES² update to share?</h2><div><p>Send the date, title, a short description, a link, and one approved image. The item can then be added to this page.</p><a className="button button-accent" href="/contact">Submit a news update <Arrow /></a></div></div></section>
   </main>;
 }

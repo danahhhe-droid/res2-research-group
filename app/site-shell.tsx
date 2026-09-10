@@ -18,7 +18,7 @@ export function SiteHeader() {
       <header className="site-header shell">
         <a className="brand" href="/" aria-label="Dana Marmolejo and RES squared home">
           <img className="brand-logo" src="/brand/res2-logo-high-resolution-v2.png" alt="RES² — Research in Energy Systems and Sustainability" />
-          <span className="brand-owner">Dr. Danahe Marmolejo</span>
+          <span className="brand-owner">Dana Marmolejo</span>
         </a>
         <nav className="primary-nav" aria-label="Primary navigation">
           {navItems.map(([label, href]) => <a href={href} key={href}>{label}</a>)}
