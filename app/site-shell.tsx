@@ -43,8 +43,7 @@ export function SiteFooter() {
         <div className="footer-contact">
           <a href="/about">About Dana</a>
           <a href="/student-success">Student success</a>
-          <a href="mailto:danahe.marmolejo@slu.edu">danahe.marmolejo@slu.edu <Arrow /></a>
-          <a href="tel:+13149778305">314-977-8305</a>
+          <a href="/contact">Contact Dana <Arrow /></a>
         </div>
       </div>
     </footer>

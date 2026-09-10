@@ -27,7 +27,7 @@ export default function ResearchPage() {
     <section className="section soft-section">
       <div className="shell">
         <div className="section-heading compact-heading"><div><p className="eyebrow dark">Selected work</p><h2>Research grounded in real systems and useful questions.</h2></div><p>Projects combine rigorous thermodynamic analysis with visualization, systems thinking, and student-led discovery.</p></div>
-        <div className="project-grid">{projects.map(([title,text]) => <article key={title}><h3>{title}</h3><p>{text}</p><a href="mailto:danahe.marmolejo@slu.edu?subject=Research%20collaboration">Discuss collaboration <Arrow /></a></article>)}</div>
+        <div className="project-grid">{projects.map(([title,text]) => <article key={title}><h3>{title}</h3><p>{text}</p><a href="/contact">Discuss collaboration <Arrow /></a></article>)}</div>
       </div>
     </section>
   </main>;

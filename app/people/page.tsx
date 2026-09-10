@@ -24,7 +24,7 @@ export default function PeoplePage() {
     <section className="section people-alumni"><div className="shell">
       <div className="section-heading compact-heading"><div><p className="eyebrow dark">Research alumni</p><h2>Former students and the work they advanced.</h2></div><p>This living record recognizes students who have contributed to RES² research, presentations, publications, and project development.</p></div>
       <div className="people-grid alumni-grid">{alumni.map((person) => <article className="person-card" key={person.name}><span>Research alum</span><h3>{person.name}</h3><strong>{person.focus}</strong><p>{person.detail}</p></article>)}</div>
-      <div className="people-path"><div><strong>Interested in joining the group?</strong><p>Prospective student researchers can share their interests, relevant coursework, and the kind of problem they hope to explore.</p></div><a className="button button-accent" href="mailto:danahe.marmolejo@slu.edu?subject=Interest%20in%20RES2%20research">Introduce yourself <Arrow /></a></div>
+      <div className="people-path"><div><strong>Interested in joining the group?</strong><p>Prospective student researchers can share their interests, relevant coursework, and the kind of problem they hope to explore.</p></div><a className="button button-accent" href="/contact">Introduce yourself <Arrow /></a></div>
     </div></section>
   </main>;
 }
