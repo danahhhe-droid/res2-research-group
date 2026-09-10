@@ -1,4 +1,5 @@
 import { Arrow } from "./site-shell";
+import { Res2ConceptMap } from "./res2-concept-map";
 
 const destinations = [
   ["Research", "Thermodynamic process integration across equipment, buildings, data centers, and communities.", "/research"],
@@ -26,20 +27,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="systems-mark" aria-label="RES squared research domains">
-            <div className="orbit orbit-one" />
-            <div className="orbit orbit-two" />
-            <div className="flow-line flow-a" />
-            <div className="flow-line flow-b" />
-            <div className="core-mark">
-              <span>RES<sup>2</sup></span>
-              <small>Research in Energy Systems<br />&amp; Sustainability</small>
-            </div>
-            <span className="domain domain-a">Thermodynamics</span>
-            <span className="domain domain-b">Process integration</span>
-            <span className="domain domain-c">Systems modeling</span>
-            <span className="domain domain-d">Engineering education</span>
-          </div>
+          <Res2ConceptMap />
         </div>
         <div className="hero-rail shell" aria-label="Research approach">
           <span>Analyze deeply</span><span>Connect scales</span><span>Create useful tools</span><span>Prepare engineers</span>
