@@ -13,6 +13,8 @@ const processSystemsPublications: Publication[] = [
 ];
 
 const engineeringEducationPublications: Publication[] = [
+  { year: "2026", type: "ASEE paper", title: "Work in Progress: Bridging the Green Divide—A Collaborative Inquiry Approach to Energy Justice and Sustainability Education", authors: "Danahe Marmolejo and J. S. Onésimo Sándoval", href: "https://peer.asee.org/wip-bridging-the-green-divide-a-collaborative-inquiry-approach-to-energy-justice-and-sustainability-education" },
+  { year: "2026", type: "ASEE paper", title: "The Evolution of a First-Year Engineering Course: Key Takeaways and Lessons Learned", authors: "Danahe Marmolejo, Chris Carroll, Michael A. Swartwout, and Susheel Singh", href: "https://peer.asee.org/the-evolution-of-a-first-year-engineering-course-key-takeaways-and-lessons-learned" },
   { year: "2025", type: "ASEE paper", title: "Work in Progress: Using the Statics Concept Inventory to Assess Hands-On Learning in Statics", authors: "Danahe Marmolejo, Sridhar Condoor, and Jalil Kianfar", href: "https://peer.asee.org/55542" },
   { year: "2025", type: "ASEE paper", title: "Spreadsheets in Civil Engineering: Fostering Proficiency through Practical Applications in Statics", authors: "Jalil Kianfar, Sridhar Condoor, and Danahe Marmolejo", href: "https://peer.asee.org/55870" },
   { year: "2025", type: "ASEE paper", title: "Novel Mechatronics as a Multidisciplinary Introduction to Engineering Fundamentals", authors: "Leendert Schrader and Danahe Marmolejo", href: "https://peer.asee.org/57002" },
