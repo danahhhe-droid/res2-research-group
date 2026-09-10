@@ -259,6 +259,8 @@ sup { font-size: 0.58em; line-height: 0; }
 .form-field input, .form-field select, .form-field textarea { width: 100%; min-height: 52px; padding: 12px 14px; border: 1px solid rgba(16,29,47,.28); border-radius: 0; color: var(--ink); background: #fbfbf8; font: 1rem/1.45 var(--sans); }
 .form-field textarea { min-height: 165px; resize: vertical; }
 .form-note { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.6; }
+.form-error { margin: 0; padding: 13px 15px; color: #7a1d1d; background: #f8e4e1; border-left: 3px solid #a83a31; font-size: .86rem; line-height: 1.5; }
+.inquiry-form button:disabled { cursor: wait; opacity: .7; }
 .thank-you-panel { max-width: 800px; }
 .thank-you-panel p { max-width: 660px; margin: 0 0 30px; color: var(--muted); line-height: 1.75; }
 
