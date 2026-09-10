@@ -19,7 +19,7 @@ export default function ContactPage() {
         <h2>How can we connect?</h2>
         <p>Use this form for questions about research, courses, collaboration, consulting, speaking, or RES² activities. Your contact information is used only to respond to your request.</p>
       </div>
-      <form className="inquiry-form" name="res2-inquiry" method="POST" action="/__forms.html">
+      <form className="inquiry-form" name="res2-inquiry" method="POST" action="/thank-you/" data-netlify="true">
         <input type="hidden" name="form-name" value="res2-inquiry" />
         <label className="form-field"><span>What information are you requesting?</span><select name="inquiry-type" defaultValue="" required><option value="" disabled>Select one</option>{inquiryTypes.map((type) => <option value={type} key={type}>{type}</option>)}</select></label>
         <div className="form-row"><label className="form-field"><span>Your name</span><input type="text" name="name" autoComplete="name" required /></label><label className="form-field"><span>Your email</span><input type="email" name="email" autoComplete="email" required /></label></div>
