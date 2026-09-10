@@ -43,10 +43,10 @@ export function SiteFooter() {
         </div>
         <div className="footer-contact">
           <a href="/about">About Dana</a>
-          <a href="https://www.linkedin.com/pub/danahe-marmolejo/49/93a/2a6" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
+          <a href="https://www.linkedin.com/in/dmc2023/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
           <a href="https://www.researchgate.net/profile/Dana-Marmolejo" target="_blank" rel="noreferrer">ResearchGate <Arrow /></a>
           <a href="/student-success">Student success</a>
-          <a href="/contact">Contact Dana <Arrow /></a>
+          <a href="/contact">Connect with Dana <Arrow /></a>
         </div>
       </div>
     </footer>

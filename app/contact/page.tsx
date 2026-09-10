@@ -1,34 +1,22 @@
-import { PageHero } from "../site-shell";
+import { Arrow, PageHero } from "../site-shell";
 
-const inquiryTypes = [
-  "Course information",
-  "Research opportunity",
-  "Research collaboration",
-  "Consultancy or industry project",
-  "Speaking or professional activity",
-  "News, award, or website correction",
-  "Other",
+const profiles = [
+  { label: "Saint Louis University", title: "Official faculty profile", description: "Academic appointment, education, research interests, publications, and university affiliation.", href: "https://www.slu.edu/science-and-engineering/academics/aerospace-and-mechanical-engineering/faculty/danahe-marmolejo.php" },
+  { label: "LinkedIn", title: "Professional activity", description: "Announcements, teaching and research milestones, professional communities, and collaborations.", href: "https://www.linkedin.com/in/dmc2023/" },
+  { label: "ResearchGate", title: "Research profile", description: "Publications, research interests, citations, and connections with the scientific community.", href: "https://www.researchgate.net/profile/Dana-Marmolejo" },
+  { label: "Google Scholar", title: "Publication record", description: "Scholarly publications and citation information across energy systems and engineering education.", href: "https://scholar.google.com/citations?user=DFflEKgAAAAJ" },
 ];
 
 export default function ContactPage() {
   return <main>
-    <PageHero eyebrow="Request information" title="Start a conversation." intro="Select the purpose of your inquiry so your message can be reviewed and directed efficiently." />
-    <section className="section shell inquiry-layout">
-      <div className="inquiry-intro">
-        <p className="eyebrow dark">RES² inquiries</p>
-        <h2>How can we connect?</h2>
-        <p>Use this form for questions about research, courses, collaboration, consulting, speaking, or RES² activities. Your contact information is used only to respond to your request.</p>
+    <PageHero eyebrow="Connect" title="Professional profiles and official information." intro="Use the profile that best matches your interest in RES² research, publications, teaching, or professional collaboration." />
+    <section className="section shell">
+      <div className="connection-grid">
+        {profiles.map((profile) => <a className="connection-card" href={profile.href} target="_blank" rel="noreferrer" key={profile.label}>
+          <span>{profile.label}</span><h2>{profile.title}</h2><p>{profile.description}</p><b>Open profile <Arrow /></b>
+        </a>)}
       </div>
-      <form className="inquiry-form" name="res2-inquiry" method="POST" action="/thank-you/" data-netlify="true">
-        <input type="hidden" name="form-name" value="res2-inquiry" />
-        <label className="form-field"><span>What information are you requesting?</span><select name="inquiry-type" defaultValue="" required><option value="" disabled>Select one</option>{inquiryTypes.map((type) => <option value={type} key={type}>{type}</option>)}</select></label>
-        <div className="form-row"><label className="form-field"><span>Your name</span><input type="text" name="name" autoComplete="name" required /></label><label className="form-field"><span>Your email</span><input type="email" name="email" autoComplete="email" required /></label></div>
-        <label className="form-field"><span>Organization or institution <small>(optional)</small></span><input type="text" name="organization" autoComplete="organization" /></label>
-        <label className="form-field"><span>Subject</span><input type="text" name="subject" required /></label>
-        <label className="form-field"><span>Message</span><textarea name="message" rows={7} required /></label>
-        <button className="button button-accent" type="submit">Send request</button>
-        <p className="form-note">This form is protected by Netlify’s built-in spam filtering. No personal phone number or direct email address is displayed on the website.</p>
-      </form>
+      <p className="connection-note">Direct phone numbers and personal email addresses are not displayed on this website. Official and professional platforms provide the appropriate contact pathways.</p>
     </section>
   </main>;
 }

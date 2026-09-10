@@ -12,8 +12,43 @@ const featuredPublications = [
     year: "2026",
     type: "Conference paper",
     title: "Energy Analysis of McDonnell Douglas Hall",
-    authors: "RES² undergraduate research collaboration",
-    href: "https://www.researchgate.net/publication/401109552_Energy_Analysis_of_McDonnell_Douglas_Hall",
+    authors: "Elizabeth Dolan, Jessica Rutherford, and Danahe Marmolejo",
+    href: "https://doi.org/10.1115/IMECE2025-164823",
+  },
+  {
+    year: "2025",
+    type: "Engineering education",
+    title: "Work in Progress: Using the Statics Concept Inventory to Assess Hands-On Learning in Statics",
+    authors: "Danahe Marmolejo, Sridhar Condoor, and Jalil Kianfar",
+    href: "https://peer.asee.org/55542",
+  },
+  {
+    year: "2025",
+    type: "Engineering education",
+    title: "Spreadsheets in Civil Engineering: Fostering Proficiency through Practical Applications in Statics",
+    authors: "Jalil Kianfar, Sridhar Condoor, and Danahe Marmolejo",
+    href: "https://peer.asee.org/55870",
+  },
+  {
+    year: "2025",
+    type: "Engineering education",
+    title: "Novel Mechatronics as a Multidisciplinary Introduction to Engineering Fundamentals",
+    authors: "Leendert Schrader and Danahe Marmolejo",
+    href: "https://peer.asee.org/57002",
+  },
+  {
+    year: "2024",
+    type: "Engineering education",
+    title: "Work in Progress: Igniting Engineering Fundamentals—A Holistic Approach to First-Year Engineering with Entrepreneurial-Minded Learning and a Project-Based Exploration of Mars",
+    authors: "Danahe Marmolejo and collaborators",
+    href: "https://doi.org/10.18260/1-2--48496",
+  },
+  {
+    year: "2024",
+    type: "Engineering education",
+    title: "Work in Progress: Transformative Integration of Problem-Based Learning and Entrepreneurial Mindset in Early and Middle Stages of Mechanical Engineering: A Focus on Statics and Dynamics",
+    authors: "Danahe Marmolejo, Chris Carroll, and Scott A. Sell",
+    href: "https://doi.org/10.18260/1-2--48333",
   },
   {
     year: "2019",
@@ -27,7 +62,7 @@ const featuredPublications = [
     type: "Journal article",
     title: "Castor Oil Preheater Selection Based on Entropy Generation and Exergy Effectiveness Criteria",
     authors: "L. Perdomo-Hurtado, J. S. Rincón Tabares, Danahe Marmolejo Correa, and F. A. Perdomo",
-    href: "https://doi.org/10.1016/j.energy.2016.11.077",
+    href: "https://doi.org/10.1016/j.energy.2016.11.128",
   },
   {
     year: "2016",
@@ -75,7 +110,7 @@ export default function PublicationsPage() {
           <div className="news-links">
             <a className="button button-accent" href="https://www.researchgate.net/profile/Dana-Marmolejo" target="_blank" rel="noreferrer">ResearchGate <Arrow /></a>
             <a className="button button-secondary" href="https://scholar.google.com/citations?user=DFflEKgAAAAJ" target="_blank" rel="noreferrer">Google Scholar <Arrow /></a>
-            <a className="text-link profile-link" href="https://www.linkedin.com/pub/danahe-marmolejo/49/93a/2a6" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
+            <a className="text-link profile-link" href="https://www.linkedin.com/in/dmc2023/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
           </div>
         </div>
       </div>

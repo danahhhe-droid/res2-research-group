@@ -148,6 +148,15 @@ sup { font-size: 0.58em; line-height: 0; }
 .news-submit p { color: #c7d8dd; line-height: 1.7; }
 .news-submit .button { margin-top: 18px; }
 
+.connection-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+.connection-card { min-height: 290px; padding: 34px; display: flex; flex-direction: column; border: 1px solid var(--rule); background: #fff; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.connection-card:hover, .connection-card:focus-visible { transform: translateY(-5px); border-color: rgba(31,97,165,.45); box-shadow: 0 20px 44px rgba(16,29,47,.10); }
+.connection-card > span { color: var(--green); font-size: .72rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+.connection-card h2 { margin: 26px 0 14px; font: 500 clamp(2rem,3vw,3.1rem)/1.05 var(--serif); }
+.connection-card p { margin: 0; color: var(--muted); line-height: 1.7; }
+.connection-card b { margin-top: auto; padding-top: 30px; color: var(--blue); font-size: .8rem; }
+.connection-note { max-width: 760px; margin: 38px 0 0; color: var(--muted); line-height: 1.7; }
+
 .guide-layout { display: grid; grid-template-columns: .35fr 1fr; gap: 80px; align-items: start; }
 .guide-layout aside { position: sticky; top: 30px; padding: 28px; color: #fff; background: var(--blue); }
 .guide-layout aside strong { font: 500 1.5rem var(--serif); }
@@ -323,6 +332,7 @@ sup { font-size: 0.58em; line-height: 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .inquiry-layout { grid-template-columns: 1fr; gap: 35px; }
   .inquiry-intro { position: static; }
+  .connection-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 580px) {
