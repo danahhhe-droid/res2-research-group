@@ -30,18 +30,18 @@ sup { font-size: 0.58em; line-height: 0; }
 .eyebrow { margin: 0 0 20px; font-size: 0.72rem; font-weight: 650; letter-spacing: 0.18em; text-transform: uppercase; color: #a8bfd0; }
 .eyebrow.dark { color: var(--green); }
 
-.global-header { color: #fff; background: #08182a; }
-.global-header .site-header { border-bottom-color: rgba(255,255,255,.13); }
+.global-header { color: var(--ink); background: #fff; }
+.global-header .site-header { border-bottom-color: rgba(16,29,47,.14); }
 
 .hero { min-height: 880px; overflow: hidden; color: var(--white); background: radial-gradient(circle at 78% 44%, rgba(30, 100, 145, 0.34), transparent 30%), linear-gradient(135deg, #0d223a 0%, #081424 72%, #0c192a 100%); }
 .home-hero { min-height: 788px; }
-.site-header { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 30px; border-bottom: 1px solid rgba(255,255,255,.13); }
-.brand { display: flex; align-items: baseline; gap: 16px; }
-.brand-name { font-family: var(--serif); font-size: 1.18rem; font-weight: 700; }
-.brand-group { padding-left: 16px; border-left: 1px solid rgba(255,255,255,.28); color: #b9cad8; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
-.primary-nav { display: flex; align-items: center; gap: 17px; font-size: .73rem; color: #d8e2e9; }
+.site-header { min-height: 112px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid rgba(16,29,47,.14); }
+.brand { display: flex; align-items: center; gap: 15px; flex: 0 0 auto; }
+.brand-logo { width: 218px; height: auto; }
+.brand-owner { max-width: 92px; padding-left: 15px; border-left: 1px solid rgba(16,29,47,.22); color: #3e5368; font-family: var(--serif); font-size: .83rem; line-height: 1.25; }
+.primary-nav { display: flex; align-items: center; gap: 15px; font-size: .72rem; color: #34485c; }
 .primary-nav a { padding: 34px 0 31px; border-bottom: 2px solid transparent; transition: .2s ease; }
-.primary-nav a:hover, .primary-nav a:focus-visible { border-color: var(--accent); color: var(--white); }
+.primary-nav a:hover, .primary-nav a:focus-visible { border-color: var(--cobalt); color: var(--blue); }
 
 .hero-grid { min-height: 660px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
 .hero-copy { position: relative; z-index: 2; padding: 70px 0; }
@@ -304,8 +304,8 @@ sup { font-size: 0.58em; line-height: 0; }
 
 @media (max-width: 900px) {
   .site-header { align-items: flex-start; padding: 22px 0; }
-  .brand { flex-direction: column; gap: 7px; }
-  .brand-group { padding: 0; border: 0; }
+  .brand-logo { width: 205px; }
+  .brand-owner { max-width: 88px; }
   .primary-nav { gap: 16px; flex-wrap: wrap; justify-content: flex-end; }
   .primary-nav a { padding: 8px 0; }
   .hero-grid, .section-heading, .consultancy-grid, .about-grid, .page-hero-grid, .news-feature, .home-consultancy-grid, .news-submit-grid, .guide-layout { grid-template-columns: 1fr; }
@@ -339,6 +339,9 @@ sup { font-size: 0.58em; line-height: 0; }
   .shell { width: min(100% - 28px, 1180px); }
   .section { padding-top: 78px; padding-bottom: 78px; }
   .site-header { display: block; }
+  .brand { justify-content: flex-start; padding-bottom: 14px; }
+  .brand-logo { width: min(235px, 72vw); }
+  .brand-owner { max-width: 100px; }
   .primary-nav { margin-top: 18px; justify-content: flex-start; }
   .hero h1 { font-size: 3.15rem; }
   .hero-lede { font-size: .96rem; }
