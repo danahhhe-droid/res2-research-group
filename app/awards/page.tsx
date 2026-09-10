@@ -13,7 +13,7 @@ const recognitions = [
 
 export default function AwardsPage() {
   return <main>
-    <PageHero eyebrow="Awards & recognition" title="Recognition for scholarship, education, service, and student work." intro="A record of selected honors that reflect the RES² commitment to rigorous engineering, meaningful education, and student development." />
+    <PageHero eyebrow="Awards & recognition" title="Recognition for teaching, scholarship, service, and collaborative research." intro="Selected honors reflecting Dr. Marmolejo’s commitment to rigorous engineering, innovative education, and the development of people and scientific capacity." />
     <section className="section shell"><div className="recognition-list">{recognitions.map((item) => <article className="recognition-item" key={item.title}><div><span>{item.year}</span><small>{item.type}</small></div><div><h2>{item.title}</h2><p>{item.text}</p>{item.href && <a className="text-link profile-link" href={item.href}>View source <Arrow /></a>}</div></article>)}</div></section>
     <section className="award-note"><div className="shell"><p>This page highlights selected recognitions. Have a correction or an award to add?</p><a className="button button-accent" href="/contact">Send an update <Arrow /></a></div></section>
   </main>;
