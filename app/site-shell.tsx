@@ -1,4 +1,5 @@
 const navItems = [
+  ["Home", "/"],
   ["Research", "/research"],
   ["Publications", "/publications"],
   ["People", "/people"],
