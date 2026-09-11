@@ -290,6 +290,7 @@ sup { font-size: 0.58em; line-height: 0; }
 .student-path i { color: var(--accent); font-style: normal; }
 
 .people-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+.current-grid { grid-template-columns: repeat(3,1fr); }
 .alumni-grid { grid-template-columns: repeat(3,1fr); }
 .person-card { min-height: 300px; padding: 30px; display: flex; flex-direction: column; border: 1px solid var(--rule); background: #fff; }
 .person-card.current { border-top: 4px solid var(--green); }
@@ -297,6 +298,7 @@ sup { font-size: 0.58em; line-height: 0; }
 .person-card h3 { margin: 34px 0 8px; font: 500 2.1rem/1.05 var(--serif); }
 .person-card strong { color: var(--blue); font-size: .78rem; line-height: 1.45; }
 .person-card p { margin: auto 0 0; padding-top: 25px; color: var(--muted); font-size: .87rem; line-height: 1.7; }
+.person-link { margin-top: 22px; color: var(--blue); font-size: .78rem; font-weight: 700; }
 .people-alumni { background: #e8edef; }
 .people-path { margin-top: 36px; padding: 34px; display: flex; justify-content: space-between; gap: 40px; align-items: center; color: #fff; background: var(--navy-2); }
 .people-path strong { font: 500 1.8rem var(--serif); }
@@ -381,7 +383,7 @@ sup { font-size: 0.58em; line-height: 0; }
   .course-grid { grid-template-columns: repeat(2,1fr); }
   .tool-workspace { grid-template-columns: 1fr; }
   .tool-inputs { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.13); }
-  .education-grid, .success-grid, .alumni-grid { grid-template-columns: 1fr; }
+  .education-grid, .success-grid, .current-grid, .alumni-grid { grid-template-columns: 1fr; }
   .project-grid, .service-grid { grid-template-columns: 1fr; }
   .keen-card-grid { grid-template-columns: repeat(2,1fr); }
   .news-item { grid-template-columns: 1fr; gap: 18px; }
